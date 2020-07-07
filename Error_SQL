@@ -7,3 +7,9 @@ Solve:
 5. GRANT ALL PRIVILEGES ON * . * TO 'username'@'localhost'; -- setup PRIVILEGES for user (cấp quyền cho user)
 6. FLUSH PRIVILEGES; -- save all change 
 //source: https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+--------------------------------------------------------------------
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+SHOW VARIABLES LIKE 'validate_password%';
+SET GLOBAL validate_password_policy=LOW;
+
+//source: https://tecadmin.net/change-mysql-password-policy-level/
