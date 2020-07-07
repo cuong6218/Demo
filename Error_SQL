@@ -6,4 +6,4 @@ Solve:
 4. CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
 5. GRANT ALL PRIVILEGES ON * . * TO 'username'@'localhost'; -- setup PRIVILEGES for user (cấp quyền cho user)
 6. FLUSH PRIVILEGES; -- save all change 
-
+//source: https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
