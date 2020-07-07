@@ -1,0 +1,9 @@
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+Solve: 
+1. sudo apt-get remove --purge mysql\*  -- remove mysql
+2. sudo apt-get install mysql-server mysql-client -- setup mysql
+3. set password for root -- sudo mysql -u root -p
+4. CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+5. GRANT ALL PRIVILEGES ON * . * TO 'username'@'localhost'; -- setup PRIVILEGES for user (cấp quyền cho user)
+6. FLUSH PRIVILEGES; -- save all change 
+
