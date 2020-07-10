@@ -19,6 +19,7 @@ gio list trash:// --- open list file in trash
 gio trash [file or dir] --- move file to trash
 gio trash --empty --- remove file in trash
 Windows + space --- change keyboard language
+free -m --- check memory status
 
 Git
 rm -rf .git -- remove .git hindden file
